@@ -1,0 +1,129 @@
+html {
+  background: #f2f1f4;
+  color:#fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.accordion {
+    background-color: rgb(177, 109, 202);
+    padding: 0px 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.FAQ {
+    text-align: center;
+    font-size: 36px;
+}
+
+/* section A */
+.sectionA {
+    border: 2px solid white;
+    border-radius: 12px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-title {
+    color: blueviolet;
+    border-bottom: 2px solid;
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 2px;
+}
+
+.sectionA-inner{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.sectionA-inner .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.title:hover {
+    color: rgb(222, 172, 213);
+    cursor: pointer;
+}
+
+
+.description {
+    text-align: center;
+    display: none;
+}
+
+.active + .description {
+    display: block;
+    
+    
+}
+
+/* section B */
+.sectionB{
+    border: 2px solid white;
+    border-radius: 12px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+}
+
+.sectionB-title {
+    color: blueviolet;
+    border-bottom: 2px solid;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px;
+    padding-bottom: 20px;
+}
+
+.sectionB-inner {
+    padding-bottom: 20px;
+    padding: 0px 20px;
+}
+
+.sectionB-inner .title {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding-left: 20px;
+    font-weight: bold;
+    border-bottom: 1px solid;
+    color: #fff;
+    transition: transform;
+    transition-duration: 300ms;
+}
+
+.sectionB-inner .title:hover {
+    background-color: rgb(222, 172, 213);
+    transition: transform;
+    transition-duration: 300ms;
+    transform: scale(1.02);
+    border-radius: 10px ;
+}
+
+.sectionB-inner .title i {
+    transform: rotate(180deg);
+    transition: transform;
+    transition-duration: 500ms;
+}
+
+.sectionB-inner .title.active i {
+    transform: rotate(0deg);
+    transition: transform;
+    transition-duration: 300ms;
+}
+
+
+.sectionB-inner .description {
+    text-align: left;
+    padding: 20px;
+    opacity: 55%;
+}
